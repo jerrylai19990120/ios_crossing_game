@@ -15,10 +15,25 @@
 		9200836125D1AE1A00CDDDCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9200835F25D1AE1A00CDDDCE /* Main.storyboard */; };
 		9200836325D1AE1B00CDDDCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9200836225D1AE1B00CDDDCE /* Assets.xcassets */; };
 		9200836625D1AE1B00CDDDCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9200836425D1AE1B00CDDDCE /* LaunchScreen.storyboard */; };
+		9200837525D1AEE200CDDDCE /* powerUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9200836E25D1AEE200CDDDCE /* powerUp.wav */; };
+		9200837625D1AEE200CDDDCE /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9200836F25D1AEE200CDDDCE /* move.wav */; };
+		9200837725D1AEE200CDDDCE /* MenuHighscoreMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9200837025D1AEE200CDDDCE /* MenuHighscoreMusic.mp3 */; };
+		9200837825D1AEE200CDDDCE /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9200837125D1AEE200CDDDCE /* background.wav */; };
+		9200837925D1AEE200CDDDCE /* levelCompleted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9200837225D1AEE200CDDDCE /* levelCompleted.wav */; };
+		9200837A25D1AEE200CDDDCE /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9200837325D1AEE200CDDDCE /* fail.wav */; };
+		9200837B25D1AEE200CDDDCE /* levelUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9200837425D1AEE200CDDDCE /* levelUp.wav */; };
+		9200837D25D1CBC800CDDDCE /* Pulse.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9200837C25D1CBC800CDDDCE /* Pulse.sks */; };
+		9200837F25D1CC0200CDDDCE /* fireworks.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9200837E25D1CC0200CDDDCE /* fireworks.sks */; };
+		9200838125D1FD1A00CDDDCE /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9200838025D1FD1A00CDDDCE /* StartScene.sks */; };
+		9200838325D1FD2F00CDDDCE /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9200838225D1FD2F00CDDDCE /* GameOverScene.sks */; };
+		9200838525D1FF5100CDDDCE /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200838425D1FF5100CDDDCE /* StartScene.swift */; };
+		9200838725D1FF5F00CDDDCE /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200838625D1FF5F00CDDDCE /* GameOverScene.swift */; };
+		9200838925D2039B00CDDDCE /* ScrollingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200838825D2039B00CDDDCE /* ScrollingBackground.swift */; };
+		9200838B25D208F600CDDDCE /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9200838A25D208F600CDDDCE /* GameHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9200835225D1AE1A00CDDDCE /* ColorGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9200835225D1AE1A00CDDDCE /* X cross.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "X cross.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9200835525D1AE1A00CDDDCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9200835725D1AE1A00CDDDCE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		9200835925D1AE1A00CDDDCE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -28,6 +43,21 @@
 		9200836225D1AE1B00CDDDCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9200836525D1AE1B00CDDDCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9200836725D1AE1B00CDDDCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9200836E25D1AEE200CDDDCE /* powerUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = powerUp.wav; sourceTree = "<group>"; };
+		9200836F25D1AEE200CDDDCE /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		9200837025D1AEE200CDDDCE /* MenuHighscoreMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MenuHighscoreMusic.mp3; sourceTree = "<group>"; };
+		9200837125D1AEE200CDDDCE /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		9200837225D1AEE200CDDDCE /* levelCompleted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelCompleted.wav; sourceTree = "<group>"; };
+		9200837325D1AEE200CDDDCE /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
+		9200837425D1AEE200CDDDCE /* levelUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelUp.wav; sourceTree = "<group>"; };
+		9200837C25D1CBC800CDDDCE /* Pulse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Pulse.sks; sourceTree = "<group>"; };
+		9200837E25D1CC0200CDDDCE /* fireworks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireworks.sks; sourceTree = "<group>"; };
+		9200838025D1FD1A00CDDDCE /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		9200838225D1FD2F00CDDDCE /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		9200838425D1FF5100CDDDCE /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		9200838625D1FF5F00CDDDCE /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		9200838825D2039B00CDDDCE /* ScrollingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingBackground.swift; sourceTree = "<group>"; };
+		9200838A25D208F600CDDDCE /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +82,7 @@
 		9200835325D1AE1A00CDDDCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9200835225D1AE1A00CDDDCE /* ColorGame.app */,
+				9200835225D1AE1A00CDDDCE /* X cross.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,17 +90,40 @@
 		9200835425D1AE1A00CDDDCE /* ColorGame */ = {
 			isa = PBXGroup;
 			children = (
+				9200836D25D1AEE200CDDDCE /* Sounds */,
 				9200835525D1AE1A00CDDDCE /* AppDelegate.swift */,
 				9200835725D1AE1A00CDDDCE /* GameScene.sks */,
 				9200835925D1AE1A00CDDDCE /* Actions.sks */,
+				9200837E25D1CC0200CDDDCE /* fireworks.sks */,
 				9200835B25D1AE1A00CDDDCE /* GameScene.swift */,
 				9200835D25D1AE1A00CDDDCE /* GameViewController.swift */,
 				9200835F25D1AE1A00CDDDCE /* Main.storyboard */,
 				9200836225D1AE1B00CDDDCE /* Assets.xcassets */,
 				9200836425D1AE1B00CDDDCE /* LaunchScreen.storyboard */,
 				9200836725D1AE1B00CDDDCE /* Info.plist */,
+				9200837C25D1CBC800CDDDCE /* Pulse.sks */,
+				9200838025D1FD1A00CDDDCE /* StartScene.sks */,
+				9200838225D1FD2F00CDDDCE /* GameOverScene.sks */,
+				9200838425D1FF5100CDDDCE /* StartScene.swift */,
+				9200838625D1FF5F00CDDDCE /* GameOverScene.swift */,
+				9200838825D2039B00CDDDCE /* ScrollingBackground.swift */,
+				9200838A25D208F600CDDDCE /* GameHandler.swift */,
 			);
 			path = ColorGame;
+			sourceTree = "<group>";
+		};
+		9200836D25D1AEE200CDDDCE /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9200836E25D1AEE200CDDDCE /* powerUp.wav */,
+				9200836F25D1AEE200CDDDCE /* move.wav */,
+				9200837025D1AEE200CDDDCE /* MenuHighscoreMusic.mp3 */,
+				9200837125D1AEE200CDDDCE /* background.wav */,
+				9200837225D1AEE200CDDDCE /* levelCompleted.wav */,
+				9200837325D1AEE200CDDDCE /* fail.wav */,
+				9200837425D1AEE200CDDDCE /* levelUp.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,7 +143,7 @@
 			);
 			name = ColorGame;
 			productName = ColorGame;
-			productReference = 9200835225D1AE1A00CDDDCE /* ColorGame.app */;
+			productReference = 9200835225D1AE1A00CDDDCE /* X cross.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,9 +186,20 @@
 			files = (
 				9200836125D1AE1A00CDDDCE /* Main.storyboard in Resources */,
 				9200835825D1AE1A00CDDDCE /* GameScene.sks in Resources */,
+				9200837825D1AEE200CDDDCE /* background.wav in Resources */,
+				9200838125D1FD1A00CDDDCE /* StartScene.sks in Resources */,
+				9200838325D1FD2F00CDDDCE /* GameOverScene.sks in Resources */,
+				9200837925D1AEE200CDDDCE /* levelCompleted.wav in Resources */,
+				9200837F25D1CC0200CDDDCE /* fireworks.sks in Resources */,
+				9200837B25D1AEE200CDDDCE /* levelUp.wav in Resources */,
 				9200836325D1AE1B00CDDDCE /* Assets.xcassets in Resources */,
+				9200837625D1AEE200CDDDCE /* move.wav in Resources */,
 				9200836625D1AE1B00CDDDCE /* LaunchScreen.storyboard in Resources */,
 				9200835A25D1AE1A00CDDDCE /* Actions.sks in Resources */,
+				9200837A25D1AEE200CDDDCE /* fail.wav in Resources */,
+				9200837725D1AEE200CDDDCE /* MenuHighscoreMusic.mp3 in Resources */,
+				9200837D25D1CBC800CDDDCE /* Pulse.sks in Resources */,
+				9200837525D1AEE200CDDDCE /* powerUp.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9200838725D1FF5F00CDDDCE /* GameOverScene.swift in Sources */,
 				9200835C25D1AE1A00CDDDCE /* GameScene.swift in Sources */,
 				9200835E25D1AE1A00CDDDCE /* GameViewController.swift in Sources */,
+				9200838B25D208F600CDDDCE /* GameHandler.swift in Sources */,
+				9200838925D2039B00CDDDCE /* ScrollingBackground.swift in Sources */,
 				9200835625D1AE1A00CDDDCE /* AppDelegate.swift in Sources */,
+				9200838525D1FF5100CDDDCE /* StartScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jerry-lai.ColorGame";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "X cross";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -318,7 +386,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jerry-lai.ColorGame";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "X cross";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
