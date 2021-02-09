@@ -11,6 +11,7 @@ import SpriteKit
 class StartScene: SKScene {
     
     var playButton: SKSpriteNode?
+    var banner: SKSpriteNode?
     var gameScene: SKScene!
     var backgroundMusic: SKAudioNode!
     
@@ -19,18 +20,23 @@ class StartScene: SKScene {
     
     override func didMove(to view: SKView) {
         playButton = self.childNode(withName: "startButton") as? SKSpriteNode
+        banner = self.childNode(withName: "banner") as? SKSpriteNode
         
         scrollingBG = ScrollingBackground.scrollingNodeWithImage(image: "loopBG", containerWidth: self.size.width)
         
-        scrollingBG?.scrollingSpeed = 1.5
-        scrollingBG?.anchorPoint = CGPoint.zero
-        
+        scrollingBG?.scrollingSpeed = 10
+        scrollingBG?.anchorPoint = .zero
         self.addChild(scrollingBG!)
+        
+        scrollingBG?.zPosition = -1
+        banner?.zPosition = 0
+        playButton?.zPosition = 0
         
         if let musicURL = Bundle.main.url(forResource: "MenuHighscoreMusic", withExtension: "mp3") {
             backgroundMusic = SKAudioNode(url: musicURL)
             addChild(backgroundMusic)
         }
+        
         
     }
     
@@ -50,7 +56,7 @@ class StartScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         if let scrollBG = self.scrollingBG {
-            scrollingBG?.update(currentTime: currentTime)
+            scrollBG.update(currentTime: currentTime)
         }
     }
 }

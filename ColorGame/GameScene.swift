@@ -46,6 +46,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    var restartLabel: SKLabelNode?
+    
     var remainingTime: TimeInterval = 60 {
         didSet {
             self.timeLabel?.text = "TIME: \(Int(self.remainingTime))"
@@ -55,9 +57,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var pauseBtn: SKSpriteNode?
     
     func createHUD(){
-        pauseBtn = self.childNode(withName: "pauseBtn") as? SKSpriteNode
+        pauseBtn = self.childNode(withName: "pauseButton") as? SKSpriteNode
         timeLabel = self.childNode(withName: "time") as? SKLabelNode
         scoreLabel = self.childNode(withName: "score") as? SKLabelNode
+        
+        restartLabel = self.childNode(withName: "restart") as? SKLabelNode
         
         remainingTime = 60
         currentScore = 0
@@ -212,15 +216,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 moveVertically(up: true)
             } else if node?.name == "down" || node?.name == "downimg"{
                 moveVertically(up: false)
-            } else if node?.name == "pauseBtn", let scene = self.scene{
+            } else if node?.name == "pauseButton", let scene = self.scene{
                 if scene.isPaused {
                     scene.isPaused = false
                 } else {
                     scene.isPaused = true
                 }
+            } else if node?.name == "restart" {
+                let transition = SKTransition.fade(withDuration: 1)
+                
+                if let startScene = SKScene(fileNamed: "StartScene") {
+                    startScene.scaleMode = .aspectFill
+                    self.view?.presentScene(startScene, transition: transition)
+                }
             }
         }
     }
+
     
     func moveVertically(up: Bool){
         if up {

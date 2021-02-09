@@ -14,6 +14,7 @@ class ScrollingBackground: SKSpriteNode {
     var scrollingSpeed: CGFloat = 0
     
     static func scrollingNodeWithImage(image: String, containerWidth: CGFloat)->ScrollingBackground {
+        
         let bgImage = UIImage(named: image)!
         
         let scrollNode = ScrollingBackground(color: UIColor.clear, size: CGSize(width: containerWidth, height: bgImage.size.height))
@@ -35,7 +36,7 @@ class ScrollingBackground: SKSpriteNode {
     
     func update(currentTime: TimeInterval) {
         for child in self.children {
-            child.position = CGPoint(x: child.position.x-scrollingSpeed, y: child.position.y)
+            child.position = CGPoint(x: child.position.x-self.scrollingSpeed, y: child.position.y)
             
             if child.position.x <= -child.frame.size.width {
                 let delta = child.position.x + child.frame.size.width
