@@ -24,7 +24,7 @@ class StartScene: SKScene {
         
         scrollingBG = ScrollingBackground.scrollingNodeWithImage(image: "loopBG", containerWidth: self.size.width)
         
-        scrollingBG?.scrollingSpeed = 10
+        scrollingBG?.scrollingSpeed = 1.5
         scrollingBG?.anchorPoint = .zero
         self.addChild(scrollingBG!)
         
