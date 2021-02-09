@@ -348,6 +348,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func nextLevel(playerPhysicBody: SKPhysicsBody){
         self.currentScore += 1
+        self.remainingTime += 20
         self.run(SKAction.playSoundFileNamed("levelUp.wav", waitForCompletion: true))
         let emitter = SKEmitterNode(fileNamed: "fireworks.sks")
         playerPhysicBody.node?.addChild(emitter!)
